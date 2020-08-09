@@ -23,26 +23,32 @@ function complete() {
 async function getQuote() {
   loading();
   // We need to use a Proxy URL to make our API call in order to avoid a CORS error
-  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  const proxyUrl = 'https://mighty-gorge-35380.herokuapp.com/';
   const apiUrl = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
   try {
     const response = await fetch(proxyUrl + apiUrl);
     const data = await response.json();
-    // Check if Author field is blank and replace it with 'Unknown'
-    if (data.quoteAuthor === '') {
-      authorText.innerText = 'Unknown';
+    console.log(quoteText.innerText);
+    console.log(data.quoteText);
+    if (quoteText.innerText != data.quoteText) {
+      // Check if Author field is blank and replace it with 'Unknown'
+      if (data.quoteAuthor === '') {
+        authorText.innerText = 'Unknown';
+      } else {
+        authorText.innerText = data.quoteAuthor;
+      }
+      // Dynamically reduce font size for long quotes
+      if (data.quoteText.length > 120) {
+        quoteText.classList.add('long-quote');
+      } else {
+        quoteText.classList.remove('long-quote');
+      }
+      quoteText.innerText = data.quoteText;
+      // Stop Loading, Show Quote
+      complete();
     } else {
-      authorText.innerText = data.quoteAuthor;
+      getQuote();
     }
-    // Dynamically reduce font size for long quotes
-    if (data.quoteText.length > 120) {
-      quoteText.classList.add('long-quote');
-    } else {
-      quoteText.classList.remove('long-quote');
-    }
-    quoteText.innerText = data.quoteText;
-    // Stop Loading, Show Quote
-    complete();
   } catch (error) {
     getQuote();
   }
