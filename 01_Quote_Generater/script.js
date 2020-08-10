@@ -22,29 +22,23 @@ function complete() {
 // Get Quote From API
 async function getQuote() {
   loading();
-  // We need to use a Proxy URL to make our API call in order to avoid a CORS error
   const proxyUrl = 'https://mighty-gorge-35380.herokuapp.com/';
   const apiUrl = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
   try {
     const response = await fetch(proxyUrl + apiUrl);
     const data = await response.json();
-    console.log(quoteText.innerText);
-    console.log(data.quoteText);
     if (quoteText.innerText != data.quoteText) {
-      // Check if Author field is blank and replace it with 'Unknown'
       if (data.quoteAuthor === '') {
         authorText.innerText = 'Unknown';
       } else {
         authorText.innerText = data.quoteAuthor;
       }
-      // Dynamically reduce font size for long quotes
       if (data.quoteText.length > 120) {
         quoteText.classList.add('long-quote');
       } else {
         quoteText.classList.remove('long-quote');
       }
       quoteText.innerText = data.quoteText;
-      // Stop Loading, Show Quote
       complete();
     } else {
       getQuote();
