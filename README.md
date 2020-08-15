@@ -11,3 +11,7 @@
 3. [Picture in Picture](https://nicolakacha.github.io/javascript-20-projects/03_Picture_In_Picture/)
 
     To practice the picture in picture function.
+
+4. [Joke Teller](https://nicolakacha.github.io/javascript-20-projects/03_Joke_Teller/)
+
+    A joke teller use text to audio api.
