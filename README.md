@@ -12,6 +12,10 @@
 
     To practice the picture in picture function.
 
-4. [Joke Teller](https://nicolakacha.github.io/javascript-20-projects/0_Joke_Teller/)
+4. [Joke Teller](https://nicolakacha.github.io/javascript-20-projects/04_Joke_Teller/)
 
     A joke teller use text to audio api.
+    
+4. [light_and_dark_mode](https://nicolakacha.github.io/javascript-20-projects/05_light_and_dark_mode/)
+
+    A simple website to demo light and dark mode.
