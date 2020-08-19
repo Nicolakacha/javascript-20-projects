@@ -21,3 +21,5 @@
     A simple website to demo light and dark mode.
 
 6. [Animated Template](https://nicolakacha.github.io/javascript-20-projects/06_Animiated_Template/)
+
+7. [Animated Navigation](https://nicolakacha.github.io/javascript-20-projects/07_Animiated_Navigation/)
