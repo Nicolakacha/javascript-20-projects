@@ -16,6 +16,10 @@
 
     A joke teller use text to audio api.
     
-4. [light_and_dark_mode](https://nicolakacha.github.io/javascript-20-projects/05_light_and_dark_mode/)
+5. [Light and dark mode](https://nicolakacha.github.io/javascript-20-projects/05_light_and_dark_mode/)
 
     A simple website to demo light and dark mode.
+
+6. [Animated Template](https://nicolakacha.github.io/javascript-20-projects/06_Animiated_Template/)
+
+7. [Animated Navigation](https://nicolakacha.github.io/javascript-20-projects/07_Animiated_Navigation/)
