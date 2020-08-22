@@ -61,6 +61,7 @@ h3 {
   margin: 40px 20px;
   height: 4px;
   width: 90%;
+  user-select: none;
 }
 
 .progress {
@@ -70,6 +71,7 @@ h3 {
   /* change this to show progress */
   width: 0%;
   transition: width 0.1s linear;
+  user-select: none;
 }
 
 .duration-wrapper {
@@ -77,6 +79,7 @@ h3 {
   top: -25px;
   display: flex;
   justify-content: space-between;
+  user-select: none;
 }
 
 /* Controls */
