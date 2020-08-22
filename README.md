@@ -22,4 +22,16 @@
 
 6. [Animated Template](https://nicolakacha.github.io/javascript-20-projects/06_Animiated_Template/)
 
+    Making animation for all the items on the website by using AOS library.
+
 7. [Animated Navigation](https://nicolakacha.github.io/javascript-20-projects/07_Animiated_Navigation/)
+
+    Using JavaScript to make a cool animated navigation.
+
+8. [Music Player](https://nicolakacha.github.io/javascript-20-projects/08_music_player/)
+
+    A simple music player.
+
+9. [Custom Countdown](https://nicolakacha.github.io/javascript-20-projects/09_custom_countdown/)
+
+    A simple custom countdown website.
