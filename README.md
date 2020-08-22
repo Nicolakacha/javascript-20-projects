@@ -24,7 +24,7 @@
 
     Making animation for all the items on the website by using AOS library.
 
-7. [Animated Navigation](https://nicolakacha.github.io/javascript-20-projects/07_Animiated_Navigation/)
+7. [Animated Navigation](https://nicolakacha.github.io/javascript-20-projects/07_Animated_Navigation/)
 
     Using JavaScript to make a cool animated navigation.
 
