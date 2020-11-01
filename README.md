@@ -42,4 +42,4 @@
 
 11. [Video Player](https://nicolakacha.github.io/javascript-20-projects/11-video-player)
 
-    A simple custom countdown website.
+    A simple video player
